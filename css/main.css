@@ -23,23 +23,23 @@ header {
 }
 
 h1 {
-  font-family: 'Cutive Mono', monospace;
-  color: black;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
   font-size: 100%;
   margin-top: 0;
 }
 
 h1 a {
   text-decoration: none;
-  color: black;
+  color: lightsteelblue;
 }
 
 h1 a:hover {
-  color: cadetblue;
+  color: salmon;
 }
 
 nav ul {
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Sintony', sans-serif;
   list-style-type: none;
   padding:  0;
   margin: 0;
@@ -51,7 +51,8 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: lightskyblue;
+  color: gray;
+  font-size: 14px;
 }
 
 nav a:hover {
@@ -74,10 +75,18 @@ body {
   padding-bottom: 5px;
 }
 
+.contact {
+  text-align: left;
+}
+
+.contact p {
+  color: black;
+}
+
 .contact a {
   color: black;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Sintony', sans-serif;
   font-size: 1em;
 }
 
@@ -86,8 +95,12 @@ body {
 }
 
 p {
-  color: black;
+  color: darkgray;
   font-family: sans-serif;
+}
+
+.play p {
+  color: black;
 }
 
 img:hover {
@@ -100,12 +113,51 @@ img:hover {
 
 .bucket-hover {
   opacity: 1;
-  filter: alpha(opacity=100);
 }
 
 .bucket-hover:hover {
   opacity: 0.5;
-  filter: alpha(opacity=50);
+}
+
+.hero {
+  width: 100%;
+}
+
+.title {
+  font-size: 2em;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+}
+
+.piece p {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  color: lightsteelblue;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+}
+
+.social a:hover {
+  color: salmon;
+}
+
+.parent {
+  display: flex;
+  height: 300px; /* Or whatever */
+}
+
+.child {
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto;  /* Magic! */
 }
 
 /* footer */
@@ -114,6 +166,18 @@ footer {
   position: fixed;
   bottom: 10px;
   font-size: 10px;
+}
+
+footer p {
+  color: gray;
+}
+
+media-img{
+  display: inline-block;
+}
+
+media-body {
+  display: inline-block;
 }
 
 
@@ -132,13 +196,24 @@ footer {
     margin-left: 165px;
   }
 
-  .play {
-    padding-left: 265px;
-    float: right;
+  .piece {
+    margin-left: 165px;
   }
 
   .play {
-    margin-left: 165px;
+    padding-left: 165px;
+    float: right;
+  }
+
+    .title {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .work p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
   }
 
   .contact {
