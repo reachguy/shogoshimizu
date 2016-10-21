@@ -1,0 +1,235 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* header */
+
+header {
+  padding-bottom: 2.5em;
+}
+
+h1 {
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  margin-top: 0;
+}
+
+h1 a {
+  text-decoration: none;
+  color: lightsteelblue;
+}
+
+h1 a:hover {
+  color: salmon;
+}
+
+nav ul {
+  font-family: 'Sintony', sans-serif;
+  list-style-type: none;
+  padding:  0;
+  margin: 0;
+}
+
+nav li {
+  padding-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: cadetblue;
+}
+
+/* body */
+
+body {
+  padding: 1em;
+}
+
+.content img {
+  width: 100%;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.contact {
+  text-align: left;
+}
+
+.contact p {
+  color: black;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Sintony', sans-serif;
+  font-size: 1em;
+}
+
+.contact a:hover {
+  color: salmon;
+}
+
+p {
+  color: darkgray;
+  font-family: sans-serif;
+}
+
+.play p {
+  color: black;
+}
+
+img:hover {
+  color: red;
+}
+
+.gutter {
+  padding: 5px;
+}
+
+.bucket-hover {
+  opacity: 1;
+}
+
+.bucket-hover:hover {
+  opacity: 0.5;
+}
+
+.hero {
+  width: 100%;
+}
+
+.title {
+  font-size: 2em;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+}
+
+.piece p {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  color: lightsteelblue;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+}
+
+.social a:hover {
+  color: salmon;
+}
+
+.parent {
+  display: flex;
+  height: 300px; /* Or whatever */
+}
+
+.child {
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto;  /* Magic! */
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  font-size: 10px;
+}
+
+footer p {
+  color: gray;
+}
+
+media-img{
+  display: inline-block;
+}
+
+media-body {
+  display: inline-block;
+}
+
+
+
+@media only screen and (min-width: 980px) {
+
+  header {
+    position: absolute;
+  }
+
+  .content {
+    padding-left: 165px;
+  }
+
+  .work {
+    margin-left: 165px;
+  }
+
+  .piece {
+    margin-left: 165px;
+  }
+
+  .play {
+    padding-left: 165px;
+    float: right;
+  }
+
+    .title {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .work p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .contact {
+    padding-left: 165px;
+  }
+
+  .hero {
+    padding-left: 165px;
+  }
+
+  body {
+    padding: 2em;
+  }
+
+  header {
+    position: fixed;
+  }
+
+}
