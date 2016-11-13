@@ -6,7 +6,7 @@ title: Motion Graphics
   <div class="work">
     <div class="grid">
       {% for post in site.posts %}
-      <a href="01.html"><img class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 gutter bucket-hover" src="{{site.baseurl}}/img/{{post.image}}" alt=""></a>
+      <a href="{{site.baseurl}}{{ post.url }}"><img class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 gutter bucket-hover" src="{{site.baseurl}}/img/{{post.image}}" alt=""></a>
       {% endfor %}
     </div>
   </div>

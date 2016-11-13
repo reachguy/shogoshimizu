@@ -1,0 +1,14 @@
+{%include head.html%}
+
+{%include header.html%}
+
+{% assign p = site.data.pieces[page.data] %}
+
+<main>
+  <div class="piece-hero"><img src="{{site.baseurl}}/img/{{p.piece.heroImg}}" alt=""></div>
+</main>
+
+{%include footer.html%}
+
+</body>
+</html>
