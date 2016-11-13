@@ -5,10 +5,12 @@ title: Motion Graphics
 
   <div class="work">
     <div class="grid">
-      {% for post in site.posts %}
-      <a href="{{site.baseurl}}{{ post.url }}"><img class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 gutter bucket-hover" src="{{site.baseurl}}/img/{{post.image}}" alt=""></a>
+      {% for data in site.data.pieces %}
+        {% for item in data %}
+        <a href="{{site.baseurl}}/{{item.piece.link}}">
+          <img class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 gutter bucket-hover" src="{{site.baseurl}}/img/{{item.piece.heroImg}}" alt="">
+        </a>
+        {% endfor %}
       {% endfor %}
     </div>
   </div>
-
-  <a href="01.html">

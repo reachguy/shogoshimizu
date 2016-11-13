@@ -89,6 +89,18 @@ body {
 
 /* work */
 
+.pieces {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 /* play */
 
@@ -132,9 +144,7 @@ p {
 }
 
 .piece p {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  text-align: center;
+  margin-bottom: 50px;
 }
 
 .social {
@@ -221,6 +231,16 @@ media-body {
 
   .piece {
     margin-left: 165px;
+  }
+
+  .pieces {
+    margin-left: 165px;
+    width: 75%;
+  }
+
+  .video {
+    margin-left: 165px;
+    width: 75%;
   }
 
   .play {

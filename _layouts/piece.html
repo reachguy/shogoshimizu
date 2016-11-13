@@ -5,7 +5,19 @@
 {% assign p = site.data.pieces[page.data] %}
 
 <main>
-  <div class="piece-hero"><img src="{{site.baseurl}}/img/{{p.piece.heroImg}}" alt=""></div>
+  <div class="piece-hero"><img class="pieces" src="{{site.baseurl}}/img/{{p.piece.heroImg}}" alt="">
+    <div class="piece">
+      <h2>{{p.piece.title}}</h2>
+      <h1>{{p.piece.postHeader}}</h1>
+      <p>{{p.piece.postTitle}}</p>
+    </div>
+  </div>
+
+
+  {% if p.piece.videoUrl %}
+  <iframe class="video" src="{{p.piece.videoSrc}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="{{p.piece.videoUrl}}">{{p.piece.title}}</a> from <a href="https://vimeo.com/shogoshimizu">Shogo Shimizu</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  {% endif %}
 </main>
 
 {%include footer.html%}

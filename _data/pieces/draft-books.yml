@@ -1,9 +1,11 @@
 piece:
   title: Draft Books
   postHeader:
-  postTitle:
+  postTitle: Draft Books have everything you need to conceptualize and finalize your designs from start to finish. With tracing and dotted grid paper notebooks, you get your projects rolling in no time.
   heroImg: draft-books.png
-  link:
+  videoUrl: https://vimeo.com/188889378
+  videoSrc: https://player.vimeo.com/video/188889378
+  link: draft-books
   intro:
   img1:
   img2:
